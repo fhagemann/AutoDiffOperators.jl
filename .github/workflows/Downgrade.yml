@@ -23,6 +23,6 @@ jobs:
           version: ${{ matrix.version }}
       - uses: julia-actions/julia-downgrade-compat@v1
         with:
-          skip: Pkg,TOML,DifferentiationInterface
+          skip: Pkg,TOML,LinearAlgebra,DifferentiationInterface
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-runtest@v1
